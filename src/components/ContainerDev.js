@@ -1,29 +1,31 @@
 import React from "react";
+import "../App.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-class ContainerDev extends React.Component {
-  render(Title, ImgRotate, PCode, LinkGithubSaghia) {
-    return (
-      <div className="App">
-        <Container className="App-header">
+const ContainerDev = (props) => {
+  return (
+    <div className="App">
+      <Container className="App-header">
+        <Container className="App-center">
           <Row>
-            <Col>{this.props.Title}</Col>
+            <Col>{props.Title}</Col>
           </Row>
           <Row>
-            <Col>{this.props.ImgRotate}</Col>
+            <Col>{props.ImgRotate}</Col>
+          </Row>
+          <Row>{props.ListTodo}</Row>
+          <Row>
+            <Col>{props.PCode}</Col>
           </Row>
           <Row>
-            <Col>{this.props.PCode}</Col>
-          </Row>
-          <Row>
-            <Col>{this.props.LinkGithubSaghia}</Col>
+            <Col>{props.LinkGithubSaghia}</Col>
           </Row>
         </Container>
-      </div>
-    );
-  }
-}
+      </Container>
+    </div>
+  );
+};
 
 export default ContainerDev;

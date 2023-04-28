@@ -1,10 +1,36 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: #1d201f;
+}
+
+.list-group {
+  padding-right: 0 !important;
+  --bs-list-group-bg: #e7ecef !important;
+}
+
+.form-control.xl {
+  margin-left: 1rem;
+  max-width: 19rem !important;
+}
+
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .form-control.xl {
+    margin-left: 1rem;
+    max-width: 4rem !important;
+  }
+}
+
+.TodoList {
+  margin-top: 2rem;
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -15,25 +41,31 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+}
+
+.App-center {
+  background-color: #e0ca3c;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
 }
 
 .App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: #5e4ae3;
+  background-color: #e7ecef;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

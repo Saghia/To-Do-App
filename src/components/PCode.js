@@ -2,14 +2,20 @@ import React from "react";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.css";
 
-class PCode extends React.Component {
-  render(CodeText) {
-    return (
-      <p>
-        Edit <code>{this.props.CodeText}</code> and save to reload.
-      </p>
-    );
-  }
-}
+const PCode = (props) => {
+  return (
+    <p
+      style={{
+        backgroundColor: "#e7ecef",
+        marginTop: "1rem",
+        paddingLeft: "1rem",
+        paddingRight: "1rem",
+      }}
+    >
+      Made By <code>Andrea Saggio (Saghia)</code> in{" "}
+      <code>{props.CodeText}</code>.
+    </p>
+  );
+};
 
 export default PCode;
