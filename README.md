@@ -1,3 +1,3 @@
-# TO-DO APP CHALLENGE 24H
+# TODO-LIST APP CHALLENGE 24H
 if you like it leave a star!
 
